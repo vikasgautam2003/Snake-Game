@@ -1,0 +1,89 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.body{
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('1323195.png') no-repeat center center/cover;
+
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.jacquarda-bastarda-9-regular {
+    font-family: "Jacquarda Bastarda 9", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  
+
+
+.inconsolata-regular {
+    font-family: "Inconsolata", monospace;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+  #title{
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    font-size: 100px;
+    font-weight: bold;
+    color: #fff;
+    
+  }
+
+
+
+#scoreboard
+{
+    position: absolute;
+    top: 50px;
+    right: 120px;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "Inconsolata", monospace;
+    color: #fff;
+}
+
+
+
+#board{
+    background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+    width: 90vmin;
+    height: 92vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+
+.head{
+    background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    border: 2px solid rgb(34, 4, 34); 
+    transform: scale(1.02);
+    border-radius: 9px;
+}
+
+.snake{
+    background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+    border: .25vmin solid white;
+    border-radius: 12px;
+}
+
+.food{
+    background: linear-gradient(red, purple);
+    border: .25vmin solid black;
+    border-radius: 8px;
+}
